@@ -1,31 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>mich312</title>
+---
+layout: default
+---
 
-	<!-- Responsive -->
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1, minimum-scale=1.0">
+<div class="home">
 
-	<!-- Charset -->
-	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <h1 class="page-heading">Posts</h1>
 
-	<link rel="stylesheet" type="text/css" href="style/css/main.css">
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900' rel='stylesheet' type='text/css'>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <!--p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p-->
 
-	  ga('create', 'UA-36396390-3', 'auto');
-	  ga('send', 'pageview');
-	</script>
-</head>
-<body>
-	
-	<h1>Hacker/Coder/Designer</h1>
-</body>
-</html>
+</div>

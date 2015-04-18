@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mich312 Blog</title>
+    <description>A Blog about tech, design and other stuff.
+</description>
+    <link>http://mich312.com/</link>
+    <atom:link href="http://mich312.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 18 Apr 2015 20:17:09 +0200</pubDate>
+    <lastBuildDate>Sat, 18 Apr 2015 20:17:09 +0200</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Google fonts in use</title>
+        <description>&lt;p&gt;There’s a lot of potential in Googles font library. If you’re like me and you don’t know which fonts go well together you should check this out. Just follow &lt;a href=&quot;http://femmebot.github.io/google-type/&quot;&gt;this&lt;/a&gt; link.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 18 Apr 2015 22:00:00 +0200</pubDate>
+        <link>http://mich312.com/design/typography/2015/04/18/google-type.html</link>
+        <guid isPermaLink="true">http://mich312.com/design/typography/2015/04/18/google-type.html</guid>
+        
+        
+        <category>design</category>
+        
+        <category>typography</category>
+        
+      </item>
+    
+  </channel>
+</rss>

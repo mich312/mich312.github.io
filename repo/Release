@@ -1,8 +1,0 @@
-Origin: mich312 repo
-Label: mich312 repo
-Suite: stable
-Version: 1.0
-Codename: ringoo
-Architectures: iphoneos-arm
-Components: main
-Description: mich312 Cydia Repo
