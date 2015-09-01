@@ -1,0 +1,375 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-webkit-appearance: none;
+	border-radius: 0;
+	text-decoration: none;
+	list-style-type: none;
+	color: black;
+}
+
+:focus {outline:none;}
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+body, html{
+	height: 100%;
+	width: 100%;
+}
+
+*{
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/* Constants */
+
+$max-page-width: 900px;
+
+/* Classes */
+
+.flex{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-content: center;
+   flex-wrap: wrap;
+}
+
+.flex-column{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   align-content: space-between;
+   flex-wrap: wrap;
+}
+
+.flex-vert{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   flex-grow: 1;
+}
+
+body{
+	background: #fff;
+	// border: 1.5rem solid #111;
+
+	// background: url(../../img/bg.jpg);
+	// background-size: cover;
+
+	padding-top: 8rem;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 8rem;
+	width: 100%;
+	z-index: 6;
+
+	// background: linear-gradient(to bottom, rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 100%); /* W3C */
+
+	img{
+		width: 100%;
+		display: block;
+	}
+
+	a{
+		position: absolute;
+		top: 2.5rem;
+		// background: #eee;
+	}
+
+	#logo{
+		position: absolute;
+		left: 2.5rem;
+		width: 3rem;
+	}
+
+	#menu{
+		position: absolute;
+		right: 2.5rem;
+		width: 3rem;
+		padding: 0.5rem;
+	}
+}
+
+nav{
+	background: rgba(0, 0, 0, 0.8);
+	position: fixed;
+	top: 0; bottom: 0;
+	left: 0; right: 0;
+
+	z-index: 5;
+	height: 100%;
+	display: none;
+
+	ul{
+		// padding: 10%;
+		height: 100%;
+
+		li{
+			padding: 1em 0;
+
+			a{
+				color: #fff;
+				font-size: 4rem;
+				font-weight: 800;
+				text-transform: uppercase;
+				transition: 0.2s all ease;
+
+				@media only screen and (min-width: 700px) and (max-width: 1000px){
+					font-size: 3rem;
+				}
+
+				@media only screen and (min-width: 400px) and (max-width: 700px){
+					font-size: 2.5rem;
+				}
+
+				@media only screen and (max-width: 400px){
+					font-size: 2rem;
+				}
+
+				@media only screen and (min-width: 1000px){
+					font-size: 4rem;
+				}
+
+				&:hover{
+					opacity: 0.4;
+				}
+			}
+		}
+	}
+}
+
+
+
+$feed-padding: 1rem;
+.feed{
+	padding: $feed-padding/2;
+	padding-top: 0;
+
+	> a{
+		width: 25%;
+		position: relative;
+		margin: 0;
+
+		padding: $feed-padding/2;
+
+		@media only screen and (min-width: 700px) and (max-width: 1000px){
+			width: 33.33%;
+		}
+
+		@media only screen and (min-width: 400px) and (max-width: 700px){
+			width: 50%;
+		}
+
+		@media only screen and (max-width: 400px){
+			width: 100%;
+		}
+
+		@media only screen and (min-width: 1000px){
+			width: 25%;
+		}
+
+
+		> img{
+			width: 100%;
+			display: block;
+			box-shadow: 0 0 15px  #ccc;
+		}
+
+		.insta-overlay{
+			transition: 0.2s all ease;
+			opacity: 0;
+			pointer-events: none;
+			position: absolute;
+			background: rgba(0, 0, 0, 0.5);
+			top: $feed-padding/2; bottom: $feed-padding/2;
+			left: $feed-padding/2; right: $feed-padding/2;
+			text-align: center;
+
+			.insta-overlay-info{
+				transition: 0.2s all ease;
+				transform: scale(0);
+				opacity: 0;
+			}
+
+			h3{
+				color: #fff;
+				display: inline;
+				font-size: 1.5rem;
+				padding: 0;
+				font-weight: 200;
+				height: 1.5rem;
+				line-height: 1.5rem;
+				vertical-align: top;
+				padding-left: 0.5rem;
+			}
+
+			img{
+				display: inline;
+				height: 1.5rem;
+				width: 1.5rem;
+				padding: 0;
+			}
+		}
+
+		&:hover > .insta-overlay{
+			opacity: 1;
+		}
+
+		&:hover > .insta-overlay > .insta-overlay-info{
+			transform: scale(1.0);
+			opacity: 1;
+		}
+	}
+
+	.goto-instagram{
+		position: relative;
+
+		h3{
+			padding: 0.1em 0.3em;
+			transition: 0.2s all ease;
+		}
+
+		&:hover > h3{
+				background: #000;
+				color: #fff;
+		}
+	}
+}
+
+.index-info{
+	padding: $feed-padding;
+	padding-top: 0;
+
+	h1{
+		font-size: 3rem;
+	}
+}
+
+#instagram-preview{
+
+	display: none;
+
+	position: fixed;
+	background: rgba(0, 0, 0, 0.9);
+	top: 0; bottom: 0;
+	left: 0; right: 0;
+
+	z-index: 2;
+
+	padding-top: 8rem;
+
+	.instagram-preview-wrapper{
+		width: 100%;
+		// background: #333;
+
+		> img{
+			width: 50%;
+			padding: 2rem;
+			padding-top: 0;
+
+			@media only screen and (max-width: 400px){
+				padding: 1rem;
+				width: 70vw;
+				height: 70vw;
+			}
+
+			@media only screen and (min-width: 400px){
+				width: 50%;
+			}
+		}
+
+		.instagram-preview-info{
+			width: 50%;
+			padding: 2rem;
+			padding-top: 0;
+
+			@media only screen and (max-width: 400px){
+				width: 100%;
+				padding: 1rem;
+				overflow: auto;
+			}
+
+			@media only screen and (min-width: 400px){
+				width: 50%;
+			}
+
+			*{
+				color: #fff;
+			}
+
+			p{
+				font-size: 22px;
+				line-height: 1.5em;
+				padding: 1rem 0.5rem;
+
+				@media only screen and (min-width: 1000px){
+					font-size: 22px;
+				}
+
+				@media only screen and (min-width: 700px) and (max-width: 1000px){
+					font-size: 20px;
+				}
+
+				@media only screen and (min-width: 400px) and (max-width: 700px){
+					font-size: 18px;
+				}
+
+				@media only screen and (max-width: 400px){
+					font-size: 16px;
+				}
+			}
+
+			> div{
+				width: 100%;
+				// background: #222;
+				// height: 10rem;
+				padding: 1rem 0.5rem;
+				border-bottom: 1px solid #444;
+
+				img{
+					height: 1.5rem;
+				}
+
+				h3, a{
+					display: inline;
+					height: 1.5rem;
+					line-height: 1.5rem;
+					vertical-align: top;
+					padding-left: 0.5rem;
+					font-weight: 400;
+					font-size: 18px;
+				}
+
+				a{
+					float: right;
+					padding-left: 0.3em;
+					padding-right: 0.3em;
+
+					&:hover{
+						background: #fff;
+						color: #000;
+					}
+				}
+			}
+		}
+	}
+}
+
+.soon{
+	text-align: center;
+	padding: 4rem;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
