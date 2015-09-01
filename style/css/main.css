@@ -155,7 +155,7 @@ nav {
       nav ul li a {
         color: #fff;
         font-size: 4rem;
-        font-weight: 800;
+        font-weight: 500;
         text-transform: uppercase;
         -webkit-transition: 0.2s all ease;
                 transition: 0.2s all ease; }
@@ -249,12 +249,6 @@ nav {
       background: #000;
       color: #fff; }
 
-.index-info {
-  padding: 1rem;
-  padding-top: 0; }
-  .index-info h1 {
-    font-size: 3rem; }
-
 #instagram-preview {
   display: none;
   position: fixed;
@@ -334,6 +328,31 @@ nav {
           #instagram-preview .instagram-preview-wrapper .instagram-preview-info > div a:hover {
             background: #fff;
             color: #000; }
+
+.text {
+  padding: 2.5rem;
+  padding-top: 0; }
+  .text h1 {
+    font-size: 3.5rem; }
+    @media only screen and (min-width: 1000px) {
+      .text h1 {
+        font-size: 3.5rem; } }
+    @media only screen and (min-width: 700px) and (max-width: 1000px) {
+      .text h1 {
+        font-size: 3rem; } }
+    @media only screen and (min-width: 400px) and (max-width: 700px) {
+      .text h1 {
+        font-size: 2.5rem; } }
+    @media only screen and (max-width: 400px) {
+      .text h1 {
+        font-size: 2rem; } }
+  .text a {
+    color: #F62459; }
+    .text a:hover {
+      text-decoration: underline; }
+
+.contact-text h1:nth-of-type(2), .contact-text h1:nth-of-type(3) {
+  margin-bottom: 1em; }
 
 .soon {
   text-align: center;
