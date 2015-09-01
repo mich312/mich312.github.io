@@ -182,18 +182,18 @@ nav {
     position: relative;
     margin: 0;
     padding: 0.5rem; }
-    @media only screen and (min-width: 700px) and (max-width: 1000px) {
-      .feed > a {
-        width: 33.33%; } }
-    @media only screen and (min-width: 400px) and (max-width: 700px) {
-      .feed > a {
-        width: 50%; } }
-    @media only screen and (max-width: 400px) {
-      .feed > a {
-        width: 100%; } }
     @media only screen and (min-width: 1000px) {
       .feed > a {
         width: 25%; } }
+    @media only screen and (min-width: 700px) and (max-width: 1000px) {
+      .feed > a {
+        width: 25%; } }
+    @media only screen and (min-width: 400px) and (max-width: 700px) {
+      .feed > a {
+        width: 33.33%; } }
+    @media only screen and (max-width: 400px) {
+      .feed > a {
+        width: 50%; } }
     .feed > a > img {
       width: 100%;
       display: block;
@@ -265,30 +265,26 @@ nav {
   #instagram-preview .instagram-preview-wrapper {
     width: 100%; }
     #instagram-preview .instagram-preview-wrapper > img {
-      width: 50%;
-      padding: 2rem;
-      padding-top: 0; }
-      @media only screen and (max-width: 400px) {
+      width: 40%; }
+      @media only screen and (max-width: 600px) {
         #instagram-preview .instagram-preview-wrapper > img {
-          padding: 1rem;
-          padding-top: 0;
-          width: 80vw;
-          height: 80vw; } }
-      @media only screen and (min-width: 400px) {
+          width: 90vw;
+          height: 90vw;
+          padding: 0;
+          background: #eee; } }
+      @media only screen and (min-width: 600px) {
         #instagram-preview .instagram-preview-wrapper > img {
-          width: 50%; } }
+          width: 40%; } }
     #instagram-preview .instagram-preview-wrapper .instagram-preview-info {
-      width: 50%;
-      padding: 2rem;
       padding-top: 0; }
-      @media only screen and (max-width: 400px) {
+      @media only screen and (max-width: 600px) {
         #instagram-preview .instagram-preview-wrapper .instagram-preview-info {
           width: 100%;
           padding: 1rem;
           overflow: auto; } }
-      @media only screen and (min-width: 400px) {
+      @media only screen and (min-width: 600px) {
         #instagram-preview .instagram-preview-wrapper .instagram-preview-info {
-          width: 50%; } }
+          width: 40%; } }
       #instagram-preview .instagram-preview-wrapper .instagram-preview-info * {
         color: #fff; }
       #instagram-preview .instagram-preview-wrapper .instagram-preview-info p {
@@ -332,6 +328,10 @@ nav {
 .text {
   padding: 2.5rem;
   padding-top: 0; }
+  @media only screen and (max-width: 400px) {
+    .text {
+      padding: 1.5rem;
+      padding-top: 0; } }
   .text h1 {
     font-size: 3.5rem; }
     @media only screen and (min-width: 1000px) {
