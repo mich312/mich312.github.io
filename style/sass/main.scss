@@ -295,8 +295,8 @@ $feed-padding: 1rem;
 
 			@media only screen and (max-width: 600px){
 				// padding: 0 1rem;
-				width: 90vw;
-				height: 90vw;
+				width: 80vw;
+				height: 80vw;
 				padding: 0;
 				background: #eee;
 			}
@@ -350,6 +350,12 @@ $feed-padding: 1rem;
 
 				@media only screen and (max-width: 400px){
 					font-size: 16px;
+					padding: 0.5rem 0.5rem;
+				}
+
+				@media only screen and (max-height: 500px){
+					font-size: 14px;
+					padding: 0.25rem 0.5rem;
 				}
 			}
 
@@ -419,6 +425,10 @@ $feed-padding: 1rem;
 
 		@media only screen and (max-width: 400px){
 			font-size: 2rem;
+		}
+
+		@media only screen and (max-height: 500px){
+			font-size: 1.7rem;
 		}
 	}
 

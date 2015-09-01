@@ -268,8 +268,8 @@ nav {
       width: 40%; }
       @media only screen and (max-width: 600px) {
         #instagram-preview .instagram-preview-wrapper > img {
-          width: 90vw;
-          height: 90vw;
+          width: 80vw;
+          height: 80vw;
           padding: 0;
           background: #eee; } }
       @media only screen and (max-height: 500px) {
@@ -308,7 +308,12 @@ nav {
             font-size: 18px; } }
         @media only screen and (max-width: 400px) {
           #instagram-preview .instagram-preview-wrapper .instagram-preview-info p {
-            font-size: 16px; } }
+            font-size: 16px;
+            padding: 0.5rem 0.5rem; } }
+        @media only screen and (max-height: 500px) {
+          #instagram-preview .instagram-preview-wrapper .instagram-preview-info p {
+            font-size: 14px;
+            padding: 0.25rem 0.5rem; } }
       #instagram-preview .instagram-preview-wrapper .instagram-preview-info > div {
         width: 100%;
         padding: 1rem 0.5rem;
@@ -355,6 +360,9 @@ nav {
     @media only screen and (max-width: 400px) {
       .text h1 {
         font-size: 2rem; } }
+    @media only screen and (max-height: 500px) {
+      .text h1 {
+        font-size: 1.7rem; } }
   .text a {
     color: #F62459; }
     .text a:hover {
