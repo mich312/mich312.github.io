@@ -272,6 +272,12 @@ nav {
           height: 90vw;
           padding: 0;
           background: #eee; } }
+      @media only screen and (max-height: 500px) {
+        #instagram-preview .instagram-preview-wrapper > img {
+          width: 70vw;
+          height: 70vw;
+          padding: 0;
+          background: #eee; } }
       @media only screen and (min-width: 600px) {
         #instagram-preview .instagram-preview-wrapper > img {
           width: 40%; } }
@@ -307,6 +313,9 @@ nav {
         width: 100%;
         padding: 1rem 0.5rem;
         border-bottom: 1px solid #444; }
+        @media only screen and (max-width: 400px) {
+          #instagram-preview .instagram-preview-wrapper .instagram-preview-info > div {
+            padding: 0.25rem 0.5rem; } }
         #instagram-preview .instagram-preview-wrapper .instagram-preview-info > div img {
           height: 1.5rem; }
         #instagram-preview .instagram-preview-wrapper .instagram-preview-info > div h3, #instagram-preview .instagram-preview-wrapper .instagram-preview-info > div a {

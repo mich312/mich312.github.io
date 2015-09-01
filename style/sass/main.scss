@@ -301,6 +301,13 @@ $feed-padding: 1rem;
 				background: #eee;
 			}
 
+			@media only screen and (max-height: 500px){
+				width: 70vw;
+				height: 70vw;
+				padding: 0;
+				background: #eee;
+			}
+
 			@media only screen and (min-width: 600px){
 				width: 40%;
 			}
@@ -352,6 +359,10 @@ $feed-padding: 1rem;
 				// height: 10rem;
 				padding: 1rem 0.5rem;
 				border-bottom: 1px solid #444;
+
+				@media only screen and (max-width: 400px){
+					padding: 0.25rem 0.5rem;
+				}
 
 				img{
 					height: 1.5rem;
