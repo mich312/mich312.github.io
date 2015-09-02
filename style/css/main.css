@@ -109,7 +109,8 @@ header {
   left: 0;
   height: 8rem;
   width: 100%;
-  z-index: 6; }
+  z-index: 6;
+  pointer-events: none; }
   @media only screen and (max-width: 400px) {
     header {
       height: 6rem; } }
@@ -118,7 +119,8 @@ header {
     display: block; }
   header a {
     position: absolute;
-    top: 2.5rem; }
+    top: 2.5rem;
+    pointer-events: all; }
     @media only screen and (max-width: 400px) {
       header a {
         top: 1.5rem; } }
@@ -263,9 +265,15 @@ nav {
     #instagram-preview {
       padding-top: 6rem; } }
   #instagram-preview .instagram-preview-wrapper {
-    width: 100%; }
+    width: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     #instagram-preview .instagram-preview-wrapper > img {
-      width: 40%; }
+      width: 40%;
+      margin: 0;
+      opacity: 0; }
       @media only screen and (max-width: 600px) {
         #instagram-preview .instagram-preview-wrapper > img {
           width: 80vw;
@@ -280,14 +288,15 @@ nav {
           background: #eee; } }
       @media only screen and (min-width: 600px) {
         #instagram-preview .instagram-preview-wrapper > img {
-          width: 40%; } }
+          width: 40%;
+          margin-right: 4%; } }
     #instagram-preview .instagram-preview-wrapper .instagram-preview-info {
-      padding-top: 0; }
+      padding-top: 0;
+      margin: 0; }
       @media only screen and (max-width: 600px) {
         #instagram-preview .instagram-preview-wrapper .instagram-preview-info {
           width: 100%;
-          padding: 1rem;
-          overflow: auto; } }
+          padding: 1rem; } }
       @media only screen and (min-width: 600px) {
         #instagram-preview .instagram-preview-wrapper .instagram-preview-info {
           width: 40%; } }
@@ -322,7 +331,8 @@ nav {
           #instagram-preview .instagram-preview-wrapper .instagram-preview-info > div {
             padding: 0.25rem 0.5rem; } }
         #instagram-preview .instagram-preview-wrapper .instagram-preview-info > div img {
-          height: 1.5rem; }
+          height: 1.5rem;
+          opacity: 1 !important; }
         #instagram-preview .instagram-preview-wrapper .instagram-preview-info > div h3, #instagram-preview .instagram-preview-wrapper .instagram-preview-info > div a {
           display: inline;
           height: 1.5rem;
@@ -376,3 +386,7 @@ nav {
   padding: 4rem;
   font-size: 2rem;
   text-transform: uppercase; }
+
+#animation-image {
+  position: relative;
+  z-index: 3; }
