@@ -179,6 +179,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/projects\/whereismyweekend.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/img\/projects\/whereismyweekend.png",
+		"outputAbbreviatedPath": "\/img\/projects\/whereismyweekend.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/test.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
