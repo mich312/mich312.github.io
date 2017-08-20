@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-	<title>mich312 – Home</title>
+	<title></title>
 
 	<!-- JQuery -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
@@ -14,112 +13,16 @@
 	<!-- Charset -->
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-	<!-- Fonts -->
-	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'> -->
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="style/css/main.css">
-	<script type="text/javascript" src="script/main.js"></script>
-	<script>
-		(function(i, s, o, g, r, a, m) {
-			i['GoogleAnalyticsObject'] = r;
-			i[r] = i[r] || function() {
-				(i[r].q = i[r].q || []).push(arguments)
-			}, i[r].l = 1 * new Date();
-			a = s.createElement(o),
-				m = s.getElementsByTagName(o)[0];
-			a.async = 1;
-			a.src = g;
-			m.parentNode.insertBefore(a, m)
-		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-		ga('create', 'UA-36396390-3', 'auto');
-		ga('send', 'pageview');
-	</script>
+
+	<!--script type="text/javascript" src="script/min/main-min.js"></script-->
 </head>
 
 <body>
-
-	<header>
-		<a id="logo" href="http://mich312.com">
-			<img src="img/logo.png" alt="" />
-		</a>
-
-		<a id="menu" href="javascript:void(0);" onclick="triggerIndexMenu()">
-			<!-- MENU -->
-			<img src="img/hamburger.png" alt="" />
-		</a>
-	</header>
-
-	<nav>
-		<ul class="flex-vert">
-			<li>
-				<a href="index.html">Home</a>
-			</li>
-
-			<li>
-				<a href="work.html">Work</a>
-			</li>
-
-			<li>
-				<a href="contact.html">Contact</a>
-			</li>
-		</ul>
-	</nav>
-
-	<section id="instagram-preview">
-		<div class="instagram-preview-wrapper flex">
-			<img src="img/test.jpg" alt="" />
-			<div class="instagram-preview-info">
-				<div>
-					<img src="img/heart-red.png" alt="" />
-					<h3></h3>
-					<a target="_blank">Instagram →</a>
-				</div>
-				<p></p>
-			</div>
-		</div>
-	</section>
-
-	<!-- <section class="index-info">
-		<h1>Hi, I’m Michael.</h1>
-		<h1>Designer and developer.</h1>
-	</section> -->
-
-	<section class="feed flex" id="instafeed"></section>
-
-	<script src="bower_components/instafeed.js/instafeed.js" charset="utf-8"></script>
-	<script type="text/javascript">
-		var feed = new Instafeed({
-			get: 'user',
-			accessToken: '4602476.8308b62.3868258ba8b44a1998ebc0b57b440afd',
-			userId: 4602476,
-			clientId: '8308b621cbb4415fbfdf9c52a9c6e1ba',
-			limit: 4 * 3 - 1,
-			resolution: 'standard_resolution',
-			template: '<a href="javascript:void(0)" onclick="openInsagramPreview(this)" link="{{link}}" likes="{{likes}}" desc="{{caption}}">\
-         <img src="{{image}}" alt="" />\
-         <div class="insta-overlay flex">\
-            <div class="insta-overlay-info flex">\
-               <img src="img/heart@2x.png"/>\
-               <h3>{{likes}}</h3>\
-            </div>\
-         </div>\
-      </a>',
-			after: function() {
-				// var ins = $('#instafeed a');
-				// $.each(ins , function( key, value ) {
-				//    $(ins[value]).animate({
-				//       'padding-top': 0+'px'
-				//    }, 1000);
-				// });
-				$('#instafeed').append('<a target="blank_" href="http://instagram.com/mich_312" class="goto-instagram flex">\
-            <h3>Instagram →</h3>\
-         </a>')
-			}
-		});
-		feed.run();
-	</script>
-
+	<h1 id="text">Welcome stranger!</h1>
 </body>
 
+<script type="text/javascript" src="script/main.js"></script>
 </html>
