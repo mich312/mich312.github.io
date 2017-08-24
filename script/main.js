@@ -1,11 +1,11 @@
 (function(){
-    setTimeout(function(){
-        document.body.className = "dark";
-    }, 1000);
-    setTimeout(function(){
-        text = ["My name is Michael Steurer.", "I am a CS student at TU Graz.", "Thanks for watching!"]
-        del(text, 0)
-    }, 2000);
+    // setTimeout(function(){
+    //     document.body.className = "dark";
+    // }, 1000);
+    // setTimeout(function(){
+    //     text = ["My name is Michael Steurer.", "I am a CS student at TU Graz.", "Thanks for watching!"]
+    //     del(text, 0)
+    // }, 2000);
 })();
 
 function write(text, i, index) {

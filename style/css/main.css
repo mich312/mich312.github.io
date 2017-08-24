@@ -1,3 +1,4 @@
+@import url("https://rsms.me/interface/interface.css");
 * {
   margin: 0 auto;
   padding: 0;
@@ -21,26 +22,18 @@ body, html {
   height: 100%;
   width: 100%; }
 
-body {
+header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #019679; }
-
-.dark {
-  background: black;
-  transition: 0.2s all ease-in-out; }
-  .dark > h1 {
+  height: 100%;
+  border-bottom: 2pt solid #000; }
+  header h1 {
+    font-family: "Interface", sans-serif;
+    font-weight: black;
     font-size: 60px;
-    margin: 0;
-    transition: 0.3s all ease-out;
-    opacity: 1; }
-
-h1 {
-  font-family: "Playfair Display";
-  font-weight: black;
-  font-size: 40px;
-  margin-top: -3rem;
-  color: #33FDD6;
-  text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.3);
-  opacity: 0; }
+    margin-top: -3rem;
+    color: #33FDD6; }
+    @media only screen and (max-width: 500px) {
+      header h1 {
+        font-size: 50px; } }
